@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 const Button = (props) => {
   return (
-    <button className={styles.root} onClick={props.onClick}>
+    <button className={styles.root} onClick={props.onClick} {...props}>
       {props.text}
     </button>
   );

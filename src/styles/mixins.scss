@@ -2,3 +2,23 @@
   max-width: 1400px;
   margin: 0 auto;
 }
+
+@mixin base-text-input {
+  display: block;
+  box-sizing: border-box;
+  color: $color-secondary-dark-grey;
+  border: 0;
+  border-bottom: 1px solid $color-secondary-dark-grey;
+  width: 100%;
+  padding: 10px;
+  margin: 40px 20px;
+  font-size: 20px;
+  &:focus {
+    outline: none;
+    color: $color-primary-soft-black;
+    border-bottom: 2px solid $color-primary-soft-black;
+  }
+  &::placeholder {
+    opacity: 0.6;
+  }
+}

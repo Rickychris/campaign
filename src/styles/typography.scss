@@ -1,0 +1,55 @@
+// @import "../variables/breakpoints.scss";
+@import "./fonts.scss";
+
+@mixin heading-base() {
+  font-family: $font-family-primary;
+  font-weight: 300;
+  letter-spacing: normal;
+}
+
+@mixin body-base() {
+  font-family: $font-family-primary;
+  letter-spacing: normal;
+  font-weight: normal;
+}
+
+@mixin heading-h1 {
+  @include heading-base();
+  font-size: 50px;
+  line-height: 1.16;
+
+  //   @media #{$breakpoint-mobile} {
+  //     font-size: 36px;
+  //     line-height: 1.11;
+  //   }
+}
+
+@mixin heading-h2 {
+  @include heading-base();
+  font-size: 36px;
+  line-height: 1.22;
+  font-weight: bold;
+
+  //   @media #{$breakpoint-mobile} {
+  //     font-size: 30px;
+  //     line-height: 1.27;
+  //   }
+}
+
+@mixin heading-h3 {
+  @include heading-base();
+  font-size: 26px;
+  line-height: 1.23;
+
+  //   @media #{$breakpoint-mobile} {
+  //     font-size: 18px;
+  //     line-height: 1.44;
+  //   }
+}
+
+@mixin heading-h4 {
+  @include heading-base();
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: bold;
+}
