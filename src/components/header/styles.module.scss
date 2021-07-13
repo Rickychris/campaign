@@ -1,0 +1,20 @@
+@import "../../styles/mixins.scss";
+
+.App-header-wrap {
+  background-color: #282c34;
+}
+.App-header {
+  @include max-width();
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 16px;
+  color: white;
+
+  .header-nav {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

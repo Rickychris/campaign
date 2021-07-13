@@ -1,0 +1,50 @@
+/*------------------------------------------
+ Fonts
+-------------------------------------------*/
+
+//Interstate
+
+$font-family-primary: "Interstate-Regular", serif;
+
+@font-face {
+  font-family: "Interstate-ExtraLight";
+  src: url("../assets/fonts/Interstate-ExtraLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Interstate-Light";
+  src: url("../assets/fonts/Interstate-Light.woff") format("woff"),
+    url("../assets/fonts/Interstate-Light.otf") format("otf"),
+    url("../assets/fonts/Interstate-Light.svg") format("svg"),
+    url("../assets/fonts/Interstate-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Interstate-Regular";
+  src: url("../assets/fonts/Interstate-Regular.eot");
+  src: url("../assets/fonts/Interstate-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Interstate-Regular.woff") format("woff"),
+    url("../assets/fonts/Interstate-Regular.otf") format("otf"),
+    url("../assets/fonts/Interstate-Regular.svg") format("svg"),
+    url("../assets/fonts/Interstate-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Interstate-Bold";
+  src: url("../assets/fonts/Interstate-Bold.eot");
+  src: url("../assets/fonts/Interstate-Bold.eot?#iefix")
+      format("embedded-opentype"),
+    url("../assets/fonts/Interstate-Bold.woff") format("woff"),
+    url("../assets/fonts/Interstate-Bold.otf") format("otf"),
+    url("../assets/fonts/Interstate-Bold.svg") format("svg"),
+    url("../assets/fonts/Interstate-Bold.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
