@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import firebase from "../../services/firebase";
 import Button from "../../components/button/button";
+import Spinner from "../../components/spinner/spinner";
 
 const CreateCampaign = (props) => {
   const [name, setName] = useState("");
   const [campaignName, setcampaignName] = useState("");
   const [campaignDetails, setcampaignDetails] = useState("");
-  //   const [name,setName]= useState('');
+  const [isLoading, setIsLoading] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
+    setIsLoading(true);
     event.preventDefault();
 
     const campaignData = {
@@ -22,7 +24,12 @@ const CreateCampaign = (props) => {
     };
     console.log(campaignData);
     const campaignRef = firebase.database().ref("campaign-data");
-    campaignRef.push(campaignData);
+    await campaignRef.push(campaignData);
+    setName("");
+    setcampaignName("");
+    setcampaignDetails("");
+    event.target.reset();
+    setIsLoading(false);
   };
 
   return (
@@ -51,6 +58,7 @@ const CreateCampaign = (props) => {
         />
         <Button type="submit" text="Create Campaign" />
       </form>
+      {isLoading && <Spinner />}
     </div>
   );
 };

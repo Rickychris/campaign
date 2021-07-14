@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./styles.module.scss";
 
 const Spacer = (props) => {
@@ -6,10 +7,13 @@ const Spacer = (props) => {
     <div
       className={styles.root}
       style={{ height: props.height, width: props.width }}
-    >
-      {props.text}
-    </div>
+    ></div>
   );
+};
+
+Spacer.prototype = {
+  height: PropTypes.number,
+  width: PropTypes.number,
 };
 
 export default Spacer;

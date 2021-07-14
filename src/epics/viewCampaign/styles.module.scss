@@ -2,6 +2,8 @@
 @import "../../styles/mixins.scss";
 
 .root {
+  margin-top: 60px;
+
   .h1 {
     @include heading-h1();
   }

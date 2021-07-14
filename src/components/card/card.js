@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import styles from "./styles.module.scss";
 
 const Card = (props) => {
@@ -11,6 +12,13 @@ const Card = (props) => {
       <p>{`Status : ${props.cardData.status}`}</p>
     </div>
   );
+};
+Card.prototype = {
+  createdAt: PropTypes.number,
+  lastModifiedAt: PropTypes.number,
+  creatorName: PropTypes.string,
+  campaignDetails: PropTypes.string,
+  status: PropTypes.string,
 };
 
 export default Card;
