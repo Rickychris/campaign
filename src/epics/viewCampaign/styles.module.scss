@@ -1,3 +1,18 @@
+@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
+
 .root {
-  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-top: 60px;
+
+  .h1 {
+    @include heading-h1();
+  }
+
+  .card-grid {
+    @include max-width();
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 50px;
+  }
 }
