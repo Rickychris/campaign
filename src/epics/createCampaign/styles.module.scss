@@ -9,7 +9,12 @@
   justify-content: center;
 
   form {
-    width: 80%;
+    width: 65%;
+
+    .form-sub-header {
+      text-align: left;
+      margin: 20px 0;
+    }
   }
   input,
   textarea {

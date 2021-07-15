@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 
 const Header = (props) => {
   return (
-    <div className={styles["App-header-wrap"]}>
+    <div className={styles["App-header-wrap"]} data-testid="header">
       <header className={[styles["App-header"], "max-width"].join(" ")}>
-        <div>
+        <div className={styles.logo}>
           <Link to="/">HOME</Link>
         </div>
         <nav className={styles["header-nav"]}>

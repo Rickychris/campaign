@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 const Spinner = (props) => {
   return (
-    <div className={styles.root}>
+    <div className={styles.root} data-testid="spinner">
       <div className={styles.spinner}></div>
     </div>
   );
