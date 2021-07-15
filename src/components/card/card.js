@@ -1,7 +1,8 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./styles.module.scss";
-
+import { ReactComponent as Delete } from "../../assets/icons/delete.svg";
+import { ReactComponent as Send } from "../../assets/icons/send.svg";
 const Card = (props) => {
   const createdAt =
     props.cardData.createdAt &&
@@ -11,9 +12,21 @@ const Card = (props) => {
       <p>{`Created By : ${props.cardData.creatorName}`}</p>
       <p>{createdAt}</p>
       <p>{`Status : ${props.cardData.status}`}</p>
-      <div>
-        <p onClick={() => props.delete(props.cardData.id)}>delete</p>
-        <p onClick={() => props.send(props.cardData.id)}>Send</p>
+      <div className={styles["icon-wrap"]}>
+        <p
+          onClick={() => props.send(props.cardData.id)}
+          className={styles.icon}
+          title="send emails"
+        >
+          <Send />
+        </p>
+        <p
+          onClick={() => props.delete(props.cardData.id)}
+          className={styles.icon}
+          title="delete this campaign"
+        >
+          <Delete />
+        </p>
       </div>
     </div>
   );
