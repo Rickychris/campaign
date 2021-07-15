@@ -44,7 +44,7 @@ const ViewCampaign = (props) => {
   };
 
   return (
-    <div className={styles.root}>
+    <div className={styles.root} data-testid={"view-campaign"}>
       <h1 className={styles.h1}>Campaign List</h1>
       {cardData.length > 0 ? (
         <div className={styles["card-grid"]}>

@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CreateCampaign  component tests matches snapshot 1`] = `
+<div
+  class="root"
+  data-testid="create-campaign"
+>
+  <form
+    id="campaign-form-id"
+  >
+    <h3
+      class="form-sub-header"
+    >
+      Your Campaign Name
+    </h3>
+    <input
+      placeholder="Enter the Campaign Name"
+      required=""
+      type="text"
+      value=""
+    />
+    <div
+      class="root"
+      data-testid="spacer"
+      style="height: 40px;"
+    />
+    <h3
+      class="form-sub-header"
+    >
+      Email Target List
+    </h3>
+    <div
+      class=" react-multi-email  empty"
+    >
+      <span
+        data-placeholder="true"
+      >
+        Enter your emails
+      </span>
+      <input
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="root"
+      data-testid="spacer"
+      style="height: 80px;"
+    />
+    <h3
+      class="form-sub-header"
+    >
+      From
+    </h3>
+    <input
+      placeholder="Enter your Name"
+      required=""
+      type="text"
+      value=""
+    />
+    <input
+      placeholder="Enter your Email"
+      required=""
+      type="email"
+      value=""
+    />
+    <div
+      class="root"
+      data-testid="spacer"
+      style="height: 40px;"
+    />
+    <h3
+      class="form-sub-header"
+    >
+      Email Details
+    </h3>
+    <input
+      placeholder="Add the Subject for your Email"
+      required=""
+      type="text"
+      value=""
+    />
+    <textarea
+      placeholder="Add the Email Body"
+      required=""
+      type="text"
+    />
+    <button
+      class="root"
+      data-testid="button"
+      text="Create Campaign"
+      type="submit"
+    >
+      Create Campaign
+    </button>
+  </form>
+</div>
+`;

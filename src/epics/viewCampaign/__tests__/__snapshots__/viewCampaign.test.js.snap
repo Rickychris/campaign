@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`viewCampaign  component tests matches snapshot 1`] = `
+<div
+  class="root"
+  data-testid="view-campaign"
+>
+  <h1
+    class="h1"
+  >
+    Campaign List
+  </h1>
+  <h4
+    class="h4"
+  >
+    No Data Found!
+  </h4>
+  <div
+    class="root"
+    data-testid="spinner"
+  >
+    <div
+      class="spinner"
+    />
+  </div>
+</div>
+`;

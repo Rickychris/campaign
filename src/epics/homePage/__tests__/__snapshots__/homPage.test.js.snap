@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HomePage tests matches snapshot 1`] = `
+<div
+  class="root"
+  data-testid="homepage"
+>
+  <div
+    class="placeholder"
+  >
+    Create Your Email Marketing
+    <br />
+     Campaign Today!!
+  </div>
+  <div
+    class="campaign-wrap"
+  >
+    <a
+      href="/create-campaign"
+    >
+      <button
+        class="root"
+        data-testid="button"
+        text="Create Campaign"
+      >
+        Create Campaign
+      </button>
+    </a>
+    <div
+      class="root"
+      data-testid="spacer"
+      style="height: 40px;"
+    />
+    <a
+      href="/view-campaign"
+    >
+      <button
+        class="root"
+        data-testid="button"
+        text="Manage Campaigns"
+      >
+        Manage Campaigns
+      </button>
+    </a>
+  </div>
+</div>
+`;

@@ -46,7 +46,7 @@ const CreateCampaign = (props) => {
   };
 
   return (
-    <div className={styles.root} onClick={null}>
+    <div className={styles.root} data-testid={"create-campaign"}>
       <form onSubmit={(e) => handleSubmit(e)} id="campaign-form-id">
         <h3 className={styles["form-sub-header"]}>Your Campaign Name</h3>
         <input
