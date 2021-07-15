@@ -6,7 +6,7 @@ import Spacer from "../../components/spacer/spacer";
 
 const HomePage = (props) => {
   return (
-    <div className={styles.root}>
+    <div className={styles.root} data-testid="homepage">
       <div className={styles.placeholder}>
         Create Your Email Marketing
         <br /> Campaign Today!!
