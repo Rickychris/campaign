@@ -1,5 +1,6 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/colors.scss";
+@import "../../styles/typography.scss";
 
 .root {
   @include max-width();
@@ -8,8 +9,20 @@
   display: flex;
   justify-content: center;
 
+  @media #{$breakpoint-mobile} {
+    padding: 16px;
+  }
+
   form {
     width: 65%;
+    padding: 50px;
+    background-color: #e6be8f9e;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media #{$breakpoint-mobile} {
+      width: 100%;
+      padding: 30px;
+    }
 
     .form-sub-header {
       text-align: left;

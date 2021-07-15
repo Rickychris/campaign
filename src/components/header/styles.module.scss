@@ -3,7 +3,7 @@
 @import "../../styles/colors.scss";
 
 .App-header-wrap {
-  background-color: #282c34;
+  background-color: #282c34de;
 }
 .App-header {
   @include max-width();
@@ -25,5 +25,9 @@
     width: 30%;
     display: flex;
     justify-content: space-evenly;
+
+    @media #{$breakpoint-mobile} {
+      display: none;
+    }
   }
 }
