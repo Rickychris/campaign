@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button tests matches snapshot 1`] = `
+<button
+  class="root"
+  data-testid="button"
+  text="click me"
+>
+  click me
+</button>
+`;

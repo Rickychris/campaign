@@ -11,7 +11,7 @@
   border-bottom: 1px solid $color-secondary-dark-grey;
   width: 100%;
   padding: 10px;
-  margin: 40px 20px;
+  margin: 35px 0;
   font-size: 20px;
   &:focus {
     outline: none;
@@ -19,6 +19,7 @@
     border-bottom: 2px solid $color-primary-soft-black;
   }
   &::placeholder {
-    opacity: 0.6;
+    opacity: 0.4;
+    font-size: small;
   }
 }

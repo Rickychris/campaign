@@ -7,6 +7,7 @@ const Spacer = (props) => {
     <div
       className={styles.root}
       style={{ height: props.height, width: props.width }}
+      data-testid="spacer"
     ></div>
   );
 };

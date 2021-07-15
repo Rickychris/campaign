@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spinner tests matches snapshot 1`] = `
+<div
+  class="root"
+  data-testid="spinner"
+>
+  <div
+    class="spinner"
+  />
+</div>
+`;

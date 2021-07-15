@@ -5,16 +5,6 @@ import firebase from "../../services/firebase";
 import Spinner from "../../components/spinner/spinner";
 
 const ViewCampaign = (props) => {
-  //   const campaignData = [
-  //     {
-  //       id: "unique ID",
-  //       campaignName: "Email Campaign",
-  //       creatorName: "Alvis Monk",
-  //       createdAt: "10 Jul 2020",
-  //       lastModifiedAt: "11 Jul 2020",
-  //       status: "active",
-  //     },
-  //   ];
   const [cardData, setCardData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -39,15 +29,40 @@ const ViewCampaign = (props) => {
     return () => campaignRef.off();
   }, []);
 
+  // deletes the node data from firebase
+  const deleteCampaign = (id) => {
+    const deleteCardRef = firebase.database().ref("campaign-data").child(id);
+    deleteCardRef.remove();
+  };
+
+  // updates the node status from firebase
+  const sendMails = (id) => {
+    const deleteCardRef = firebase.database().ref("campaign-data").child(id);
+    deleteCardRef.update({
+      status: "sent",
+    });
+  };
+
   return (
     <div className={styles.root}>
       <h1 className={styles.h1}>Campaign List</h1>
-      <div className={styles["card-grid"]}>
-        {cardData.map((item) => {
-          return <Card key={item.id} cardData={item}></Card>;
-        })}
-      </div>
-      {isLoading && <Spinner />}
+      {cardData.length > 0 ? (
+        <div className={styles["card-grid"]}>
+          {cardData.map((item) => {
+            return (
+              <Card
+                key={item.id}
+                cardData={item}
+                delete={deleteCampaign}
+                send={sendMails}
+              ></Card>
+            );
+          })}
+        </div>
+      ) : (
+        <h4 className={styles.h4}>No Data Found!</h4>
+      )}
+      {(isLoading || cardData.length === 0) && <Spinner />}
     </div>
   );
 };

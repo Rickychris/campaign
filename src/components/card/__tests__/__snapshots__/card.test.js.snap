@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card tests matches snapshot 1`] = `
+<div
+  class="root"
+  data-testid="card"
+>
+  <p>
+    Created By : Alvis Monk
+  </p>
+  <p>
+    Thu Jul 15 2021
+  </p>
+  <p>
+    Status : active
+  </p>
+  <div>
+    <p>
+      delete
+    </p>
+    <p>
+      Send
+    </p>
+  </div>
+</div>
+`;
