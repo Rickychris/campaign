@@ -1,4 +1,5 @@
 @import "../../styles/colors.scss";
+@import "../../styles/typography.scss";
 
 .root {
   border: none;
@@ -49,5 +50,8 @@
         background-color: $color-primary-white;
       }
     }
+  }
+  @media #{$breakpoint-mobile} {
+    margin-bottom: 30px;
   }
 }

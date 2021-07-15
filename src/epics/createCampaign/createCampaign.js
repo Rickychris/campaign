@@ -42,6 +42,7 @@ const CreateCampaign = (props) => {
     setEmailBody("");
     event.target.reset();
     setIsLoading(false);
+    props.history.push("/");
   };
 
   return (
